@@ -51,14 +51,16 @@ describe('bowling',() => {
   });
 
   it('On the 10th frame, a spare should add 11th frame ball 1', () =>{
-  //2 strikes, 2 spares 9 frames
+  //2 strikes, 2 spares 11 frames
   expect(bowling([{ball1:10,ball2:0},{ball1:4,ball2:2},{ball1:4,ball2:5},{ball1:10,ball2:0},{ball1:0,ball2:0},{ball1:8,ball2:2},{ball1:6,ball2:3},{ball1:9,ball2:1},{ball1:2,ball2:3},{ball1:8,ball2:2},{ball1:7,ball2:4}])).to.be.equal(100);
   });
 
-  it('On the 10th frame, a spare should add 11th frame ball1 and ball2', () =>{
-  //2 strikes, 2 spares 9 frames
+  it('On the 10th frame, a strike should add 11th frame ball1 and ball2', () =>{
+  //2 strikes, 2 spares 11 frames
   expect(bowling([{ball1:10,ball2:0},{ball1:4,ball2:2},{ball1:4,ball2:5},{ball1:10,ball2:0},{ball1:0,ball2:0},{ball1:8,ball2:2},{ball1:6,ball2:3},{ball1:9,ball2:1},{ball1:2,ball2:3},{ball1:10,ball2:0},{ball1:7,ball2:3}])).to.be.equal(103);
   });
+
+
 
 
 

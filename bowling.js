@@ -30,7 +30,7 @@ var score = 0;
     if(i === 9){
       if(frames[9].ball1 <=9 && frames[9].ball2 <=10 && frameTotal === 10) {
         score += frames[10].ball1;
-      } else if (frames[9].ball1 === 10 && frames[9].ball2 === 0 && frameTotal === 10){
+      } else if (frames[9].ball1 === 10 && frameTotal === 10){
         score += frames[10].ball1 + frames[10].ball2;
         }
 
