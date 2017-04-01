@@ -33,12 +33,13 @@ var score = 0;
       } else if (frames[9].ball1 === 10 && frames[9].ball2 === 0 && frameTotal === 10){
         score += frames[10].ball1 + frames[10].ball2;
         }
+
     return score;
     }
 
 
     }
-console.log(score);
+
 return score;
 
 };
